@@ -4,7 +4,7 @@ import NewsSection from "../../components/NewsSection";
 const NewsAndUpdates = () => {
   return (
     <div className="container mt-5">
-      <h1>NewsAndUpdates</h1>
+      <h1>News And Updates</h1>
       <NewsSection />
     </div>
   );
