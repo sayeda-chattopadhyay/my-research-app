@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Header from "../components/Header";
+import Banner from "../components/Banner";
+import Features from "../components/Features";
 
 const Home = () => {
   return (
     <div>
       {" "}
-      this is Home page
-      <Link to="/research">Research</Link>
+      <Header />
+      <Banner />
+      <Features />
     </div>
   );
 };
