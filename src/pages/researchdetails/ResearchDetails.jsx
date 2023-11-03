@@ -1,7 +1,7 @@
 // src/pages/ResearchDetails.jsx
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const ResearchDetails = () => {
   const { projectId } = useParams();
@@ -11,7 +11,7 @@ const ResearchDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/research.json');
+        const response = await axios.get("/research.json");
         const selectedResearch = response.data.find(
           (item) => item.id === parseInt(projectId, 10)
         );
@@ -20,7 +20,7 @@ const ResearchDetails = () => {
           setResearch(selectedResearch);
         }
       } catch (error) {
-        console.error('Error fetching research details:', error);
+        console.error("Error fetching research details:", error);
       } finally {
         setLoading(false);
       }
@@ -37,6 +37,11 @@ const ResearchDetails = () => {
         <div>
           <h2>{research.title.en}</h2>
           <p>{research.description.en}</p>
+          <img
+            src={process.env.PUBLIC_URL + research.image}
+            alt={research.title.en}
+            className="w-full h-40 object-cover"
+          />
           <a href={research.link} target="_blank" rel="noopener noreferrer">
             Visit Research Website
           </a>

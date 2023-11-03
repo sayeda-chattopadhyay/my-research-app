@@ -1,7 +1,7 @@
 // src/pages/Research.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ResearchCard from '../components/ResearchCard';
+import ResearchCard from '../../components/ResearchCard';
 
 const Research = () => {
   const [researchList, setResearchList] = useState([]);

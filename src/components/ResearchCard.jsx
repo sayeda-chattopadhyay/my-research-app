@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ResearchCard = ({ research }) => {
   return (
     <div className="border rounded-md overflow-hidden shadow-md bg-white">
-      <Link to={`/researchDetails/${research.id}`}>
+      <Link to={`/researchdetails/${research.id}`}>
         <img
           src={research.image}
           alt={research.title.en} // Use English title as alt text
