@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ResearchCard from "../../components/ResearchCard";
-import { Link } from "react-router-dom";
 
 const Research = () => {
   const [researchList, setResearchList] = useState([]);
@@ -24,9 +23,8 @@ const Research = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h2>Research Page</h2>
-      <Link to="/">Home</Link>
       {loading ? (
         <p>Loading...</p>
       ) : (
