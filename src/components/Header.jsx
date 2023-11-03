@@ -25,6 +25,9 @@ function Header() {
             <Link to={"/publications"} className="mx-4">
               Publication
             </Link>
+            <Link to={"/news"} className="mx-4">
+              News and Updates
+            </Link>
             <NavDropdown title="Language" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
               <NavDropdown.Divider />

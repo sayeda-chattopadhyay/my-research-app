@@ -35,6 +35,11 @@ const Footer = () => {
             Publications
           </Link>
         </li>
+        <li className="nav-item">
+          <Link to={"/news"} className="nav-link px-2 text-body-secondary">
+            News and Updtes
+          </Link>
+        </li>
       </ul>
     </div>
   );

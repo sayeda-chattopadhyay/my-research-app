@@ -5,6 +5,8 @@ import About from "./pages/about";
 import Research from "./pages/research/Research";
 import ResearchDetails from "./pages/researchdetails/ResearchDetails";
 import Publications from "./pages/publications/Publications";
+import NewsAndUpdates from "./pages/news/NewsAndUpdates";
+
 import BaseLayout from "./components/BaseLayout";
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
           <Route path="/publications" element={<Publications />} />
+          <Route path="/news" element={<NewsAndUpdates />} />
           <Route
             path="/researchdetails/:projectId"
             element={<ResearchDetails />}
