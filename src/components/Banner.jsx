@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-
 import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -20,7 +19,7 @@ function Banner() {
             five centuries, but also the leap into electronic typesetting,
             remaining essentially unchanged.
           </p>
-          <Button>View our research</Button>
+          <Link to={"/research"}>View our research</Link>
         </Col>
         <Col sm={5}>
           <Image

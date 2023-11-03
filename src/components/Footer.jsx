@@ -28,7 +28,10 @@ const Footer = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link to={"/publication"} className="nav-link px-2 text-body-secondary">
+          <Link
+            to={"/publications"}
+            className="nav-link px-2 text-body-secondary"
+          >
             Publications
           </Link>
         </li>

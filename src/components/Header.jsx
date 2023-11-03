@@ -9,14 +9,22 @@ function Header() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Research Project</Navbar.Brand>
+        <Link to={"/"}>Research Project</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/research"}>Research</Link>
-            <Link to={"/publication"}>Publication</Link>
+            <Link to={"/"} className="mx-4">
+              Home
+            </Link>
+            <Link to={"/about"} className="mx-4">
+              About
+            </Link>
+            <Link to={"/research"} className="mx-4">
+              Research
+            </Link>
+            <Link to={"/publications"} className="mx-4">
+              Publication
+            </Link>
             <NavDropdown title="Language" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
               <NavDropdown.Divider />
