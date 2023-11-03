@@ -1,7 +1,8 @@
 // src/pages/Research.jsx
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import ResearchCard from '../../components/ResearchCard';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import ResearchCard from "../../components/ResearchCard";
+import { Link } from "react-router-dom";
 
 const Research = () => {
   const [researchList, setResearchList] = useState([]);
@@ -10,10 +11,10 @@ const Research = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/research.json');
+        const response = await axios.get("/research.json");
         setResearchList(response.data);
       } catch (error) {
-        console.error('Error fetching research data:', error);
+        console.error("Error fetching research data:", error);
       } finally {
         setLoading(false);
       }
@@ -25,6 +26,7 @@ const Research = () => {
   return (
     <div>
       <h2>Research Page</h2>
+      <Link to="/">Home</Link>
       {loading ? (
         <p>Loading...</p>
       ) : (
