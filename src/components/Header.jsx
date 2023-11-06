@@ -7,25 +7,27 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
       <Container>
-        <Link to={"/"}>Research Project</Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Link to={"/"} className="navbar-brand">
+          Research Project
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-white" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to={"/"} className="mx-4">
+          <Nav className="ms-auto">
+            <Link to={"/"} className="nav-link">
               Home
             </Link>
-            <Link to={"/about"} className="mx-4">
+            <Link to={"/about"} className="nav-link">
               About
             </Link>
-            <Link to={"/research"} className="mx-4">
+            <Link to={"/research"} className="nav-link">
               Research
             </Link>
-            <Link to={"/publications"} className="mx-4">
+            <Link to={"/publications"} className="nav-link">
               Publication
             </Link>
-            <Link to={"/news"} className="mx-4">
+            <Link to={"/news"} className="nav-link">
               News and Updates
             </Link>
             <NavDropdown title="Language" id="basic-nav-dropdown">
