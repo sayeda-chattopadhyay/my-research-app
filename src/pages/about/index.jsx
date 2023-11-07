@@ -6,7 +6,7 @@ import Team from "../../components/Team";
 
 function About() {
   return (
-    <Container className="">
+    <Container className="banner">
       <Row className="px-4 my-5">
         <Col sm={7}>
           <h1>Lorem Ipsum</h1>

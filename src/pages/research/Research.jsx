@@ -23,18 +23,20 @@ const Research = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h2>Research Page</h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div>
-          {researchList.map((research) => (
-            <ResearchCard key={research.id} research={research} />
-          ))}
-        </div>
-      )}
-    </div>
+    <>
+      <div className="container-lg px-4 bg-light">
+        <h1 className="my-5 py-5 text-center">Our Research</h1>
+        {loading ? (
+          <p>Loading...</p>
+        ) : (
+          <div className="row g-5">
+            {researchList.map((research) => (
+              <ResearchCard key={research.id} research={research} />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

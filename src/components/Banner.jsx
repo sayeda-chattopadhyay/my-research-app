@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 function Banner() {
   return (
-    <Container className="">
-      <Row className="px-4 my-5">
-        <Col sm={7}>
+    <Container className="banner">
+      <Row className="px-4 ">
+        <Col>
           <h6>Welcome to my website</h6>
           <h1>Lorem Ipsum</h1>
           <p>
@@ -21,7 +21,7 @@ function Banner() {
           </p>
           <Link to={"/research"}>View our research</Link>
         </Col>
-        <Col sm={5}>
+        <Col>
           <Image
             src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             fluid

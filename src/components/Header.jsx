@@ -13,7 +13,10 @@ function Header() {
           Research Project
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-white" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="justify-content-between"
+        >
           <Nav className="ms-auto">
             <Link to={"/"} className="nav-link">
               Home

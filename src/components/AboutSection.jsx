@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function AboutSection() {
   return (
-    <Container className="">
+    <Container className="border border-success mt-5 pt-5">
       <Row className="px-4 my-5">
         <Col sm={5}>
           <Image
