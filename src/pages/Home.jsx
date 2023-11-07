@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 import Features from "../components/Features";
 import AboutSection from "../components/AboutSection";
 import ResearchSection from "../components/ResearchSection";
-import NewsSection from "../components/NewsSection";
+// import NewsSection from "../components/NewsSection";
 
 const Home = () => {
   return (
@@ -11,9 +11,9 @@ const Home = () => {
       {" "}
       <Banner />
       <Features />
-      <AboutSection />
       <ResearchSection />
-      <NewsSection />
+      <AboutSection />
+      {/* <NewsSection /> */}
     </div>
   );
 };

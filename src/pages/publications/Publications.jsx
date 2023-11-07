@@ -2,7 +2,7 @@ import React from "react";
 
 const Publications = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5">
       <div className="card mb-3">
         <div className="row g-0">
           <div className="col-md-2">

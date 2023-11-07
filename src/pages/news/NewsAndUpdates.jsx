@@ -3,7 +3,7 @@ import NewsSection from "../../components/NewsSection";
 
 const NewsAndUpdates = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5">
       <h1>News And Updates</h1>
       <NewsSection />
     </div>

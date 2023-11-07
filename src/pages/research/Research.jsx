@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ResearchCard from "../../components/ResearchCard";
+import BreadcrumbExample from "../../components/BreadCrumb";
 
 const Research = () => {
   const [researchList, setResearchList] = useState([]);
@@ -23,7 +24,8 @@ const Research = () => {
   }, []);
 
   return (
-    <>
+    <div className="container mt-5 pt-5">
+    <BreadcrumbExample/>
       <div className="container-lg px-4 bg-light">
         <h1 className="my-5 py-5 text-center">Our Research</h1>
         {loading ? (
@@ -36,7 +38,7 @@ const Research = () => {
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
