@@ -24,5 +24,83 @@
     },
     "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
     "link": "https://example.com/research-2"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Research 3",
+      "no": "Forskning 3"
+    },
+    "description": {
+      "en": "Description for Research 3",
+      "no": "Beskrivelse for Forskning 3"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Research 4",
+      "no": "Forskning 4"
+    },
+    "description": {
+      "en": "Description for Research 4",
+      "no": "Beskrivelse for Forskning 4"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Research 5",
+      "no": "Forskning 2"
+    },
+    "description": {
+      "en": "Description for Research 2",
+      "no": "Beskrivelse for Forskning 2"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Research 6",
+      "no": "Forskning 2"
+    },
+    "description": {
+      "en": "Description for Research 6",
+      "no": "Beskrivelse for Forskning 2"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Research 7",
+      "no": "Forskning 2"
+    },
+    "description": {
+      "en": "Description for Research 7",
+      "no": "Beskrivelse for Forskning 2"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "Research 8",
+      "no": "Forskning 2"
+    },
+    "description": {
+      "en": "Description for Research 8",
+      "no": "Beskrivelse for Forskning 2"
+    },
+    "image": "assets/images/lucas-vasques-9vnACvX2748-unsplash.jpg",
+    "link": "https://example.com/research-2"
   }
 ]
