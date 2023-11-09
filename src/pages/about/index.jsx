@@ -12,7 +12,7 @@ function About() {
       <Container className="border mt-5">
         <Row className="px-4 my-5">
           <Col sm={7}>
-            <h1>Lorem Ipsum</h1>
+            <h1>About us</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry standard dummy text
