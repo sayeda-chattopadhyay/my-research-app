@@ -30,7 +30,7 @@ function Banner() {
                 electronic typesetting, remaining essentially unchanged.
               </p>
               <div className="my-5">
-                <StyledButton to={"/research"} bg="#ff0099" color="#fff">
+                <StyledButton to={"/research"} bg="#0d6efd" color="#fff">
                   view more
                 </StyledButton>
               </div>
