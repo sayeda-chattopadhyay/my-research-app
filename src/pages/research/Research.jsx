@@ -32,8 +32,8 @@ const Research = () => {
           <p>Loading...</p>
         ) : (
           <div className="row g-5">
-            {researchList.map((research) => (
-              <ResearchCard key={research.id} research={research} />
+            {researchList.map((research, index) => (
+              <ResearchCard key={index} research={research} />
             ))}
           </div>
         )}

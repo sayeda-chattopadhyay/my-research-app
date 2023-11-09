@@ -2,13 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+// import NavDropdown from "react-bootstrap/NavDropdown";
+
+import { StyledLink as Link } from "./styles/NavBar.styled";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-      <Container>
+    <Navbar expand="lg" style={{ backgroundColor: "#002d53" }} fixed="top">
+      <Container className="align-items-center">
         <Link to={"/"} className="navbar-brand">
           Research Project
         </Link>
@@ -17,7 +18,7 @@ function Header() {
           id="basic-navbar-nav"
           className="justify-content-between"
         >
-          <Nav className="ms-auto">
+          <Nav className="ms-auto align-items-center p-3">
             <Link to={"/"} className="nav-link">
               Home
             </Link>
@@ -33,11 +34,16 @@ function Header() {
             <Link to={"/news"} className="nav-link">
               News and Updates
             </Link>
-            <NavDropdown title="Language" id="basic-nav-dropdown">
+            {/* <NavDropdown
+              title="Language"
+              id="basic-nav-dropdown"
+              className="drop-down"
+              style={{ color: "#fff !important" }}
+            >
               <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Norwegian</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
