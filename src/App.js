@@ -6,7 +6,7 @@ import GlobalStyles from "./components/styles/Global.styled";
 import Home from "./pages/Home";
 import About from "./pages/about";
 import Research from "./pages/research/Research";
-import ResearchDetails from "./pages/researchdetails/ResearchDetails";
+import ResearchDetailsPage from "./pages/researchdetails";
 import Publications from "./pages/publications/Publications";
 import NewsAndUpdates from "./pages/news/NewsAndUpdates";
 
@@ -35,7 +35,7 @@ const App = () => {
             <Route path="/news" element={<NewsAndUpdates />} />
             <Route
               path="/researchdetails/:projectId"
-              element={<ResearchDetails />}
+              element={<ResearchDetailsPage />}
             />
           </Route>
         </Routes>
