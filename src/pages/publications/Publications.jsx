@@ -1,6 +1,6 @@
 import React from "react";
 
-const Publications = () => {
+const PublicationDetails = () => {
   return (
     <div className="container mt-5 pt-5">
       <div className="card mb-3">
@@ -88,4 +88,4 @@ const Publications = () => {
   );
 };
 
-export default Publications;
+export default PublicationDetails;

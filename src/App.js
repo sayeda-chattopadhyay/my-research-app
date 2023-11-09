@@ -7,8 +7,8 @@ import Home from "./pages/Home";
 import About from "./pages/about";
 import Research from "./pages/research/Research";
 import ResearchDetailsPage from "./pages/researchdetails";
-import Publications from "./pages/publications/Publications";
-import NewsAndUpdates from "./pages/news/NewsAndUpdates";
+import PublicationsPage from "./pages/publications";
+import NewsPage from "./pages/news";
 
 import BaseLayout from "./components/BaseLayout";
 
@@ -31,8 +31,8 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/research" element={<Research />} />
-            <Route path="/publications" element={<Publications />} />
-            <Route path="/news" element={<NewsAndUpdates />} />
+            <Route path="/publications" element={<PublicationsPage />} />
+            <Route path="/news" element={<NewsPage />} />
             <Route
               path="/researchdetails/:projectId"
               element={<ResearchDetailsPage />}
