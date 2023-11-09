@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ResearchCard from "../../components/ResearchCard";
-import BreadcrumbExample from "../../components/BreadCrumb";
+import Breadcrumb from "../../components/BreadCrumb";
 
 const Research = () => {
   const [researchList, setResearchList] = useState([]);
@@ -23,9 +23,14 @@ const Research = () => {
     fetchData();
   }, []);
 
+  const paths = [
+    { name: "Home", path: "/" },
+    { name: "Research", path: "/research" },
+  ];
+
   return (
     <div className="container mt-5 pt-5">
-    <BreadcrumbExample/>
+      <Breadcrumb paths={paths} />
       <div className="container-lg px-4 bg-light">
         <h1 className="my-5 py-5 text-center">Our Research</h1>
         {loading ? (

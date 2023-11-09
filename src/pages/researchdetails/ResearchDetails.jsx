@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import ResearchDetailsCard from "../../components/ResearchDetailsCard";
+import { StyledSection } from "../../components/styles/Section.styled";
+import Breadcrumb from "../../components/BreadCrumb";
 
 const ResearchDetails = () => {
   const { projectId } = useParams();
@@ -29,27 +32,29 @@ const ResearchDetails = () => {
     fetchData();
   }, [projectId]);
 
+  const paths = [
+    { name: "Home", path: "/" },
+    { name: "Research", path: "/research" },
+    { name: "Research Details", path: `/research/${projectId}` },
+  ];
+
   return (
-    <div>
-      {loading ? (
-        <p>Loading...</p>
-      ) : research ? (
+    <>
+      <StyledSection>
+        <Breadcrumb paths={paths} />
         <div>
-          <h2>{research.title.en}</h2>
-          <p>{research.description.en}</p>
-          <img
-            src={process.env.PUBLIC_URL + research.image}
-            alt={research.title.en}
-            className="w-full h-40 object-cover"
-          />
-          <a href={research.link} target="_blank" rel="noopener noreferrer">
-            Visit Research Website
-          </a>
+          {loading ? (
+            <p>Loading...</p>
+          ) : research ? (
+            <div className="row g-5">
+              <ResearchDetailsCard research={research} />
+            </div>
+          ) : (
+            <p>Research not found.</p>
+          )}
         </div>
-      ) : (
-        <p>Research not found.</p>
-      )}
-    </div>
+      </StyledSection>
+    </>
   );
 };
 
