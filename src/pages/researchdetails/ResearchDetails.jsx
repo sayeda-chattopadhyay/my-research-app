@@ -42,7 +42,7 @@ const ResearchDetails = () => {
     <>
       <StyledSection>
         <Breadcrumb paths={paths} />
-        <div>
+        <div className="mt-5">
           {loading ? (
             <p>Loading...</p>
           ) : research ? (
