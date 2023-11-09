@@ -21,13 +21,22 @@ const GlobalStyles = createGlobalStyle`
     }
 
     
-    .banner {
-        min-height: 70vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+   .paragraph{
+    width: 100%!important;
+    max-width: 70%!important;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        margin: 0 auto;
+        
       }
+   
+   
+   }
+
+
+
+   }
+
 `;
 
 export default GlobalStyles;

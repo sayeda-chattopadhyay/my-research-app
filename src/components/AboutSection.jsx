@@ -3,9 +3,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
+import {StyledSection} from "./styles/Section.styled";
 
 function AboutSection() {
   return (
+    <StyledSection>
     <Container className="border border-success mt-5 pt-5">
       <Row className="px-4 my-5">
         <Col sm={5}>
@@ -30,6 +32,7 @@ function AboutSection() {
         </Col>
       </Row>
     </Container>
+    </StyledSection>
   );
 }
 

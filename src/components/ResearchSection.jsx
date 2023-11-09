@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {StyledSection} from "./styles/Section.styled";
 
 const ResearchSection = () => {
   return (
+    <StyledSection>
     <div className="container px-4 py-5 my-5 border border-success">
       <h2 className="pb-2 border-bottom">Our research</h2>
 
@@ -73,6 +75,7 @@ const ResearchSection = () => {
         </div>
       </div>
     </div>
+    </StyledSection>
   );
 };
 
